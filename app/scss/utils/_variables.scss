@@ -1,8 +1,14 @@
 // file for all variables, to be imported first into style.scss
 
 /* -------------------------Typography variables------------------------- */
-$mainFont:  "Lato", sans-serif;
-$headerFont: "Oswald", sans-serif;
+// $mainFont:  'VT323', monospace;
+// $headerFont: 'VT323', monospace;
+// $mainFont:  'Roboto Mono', monospace;
+// $headerFont: 'Roboto Mono', monospace;
+// $mainFont:  'Roboto', sans-serif;
+// $headerFont: 'Roboto', sans-serif;
+$mainFont:  'Varela Round', sans-serif;
+$headerFont: 'Varela Round', sans-serif;
 
 /* -------------------------Media Query variables------------------------- */
 $bp-s: 600px;
@@ -16,12 +22,14 @@ $bp-menu: $bp-desktop;
 /* -------------------------Color variables------------------------- */
 $color__canvas-light: #fff;
 $color__canvas-medium: #c4c2c2;
-$color__canvas-dark: #868686;
+$color__canvas-dark: #222222;
 
 $color__site: #66d4b3;
 $color__brand: $color__site;
 $color__action: $color__site;
 
-
 $color__copy: rgb(43, 43, 43);
 $color__copy-light: rgb(138, 138, 138);
+
+$color__white: #fff;
+$color__black: #000;

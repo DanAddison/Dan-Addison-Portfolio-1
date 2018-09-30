@@ -369,7 +369,7 @@ body {
   position: relative; }
 
 .page {
-  min-height: calc(100vh - 250px); }
+  min-height: calc(100vh - 180px); }
 
 /* center elements on page */
 .wrapper {
@@ -381,29 +381,23 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: "Varela Round", sans-serif;
   font-weight: lighter;
-  color: #000; }
+  color: #2b2b2b; }
 
 p {
-  color: #000; }
+  font-family: "Varela Round", sans-serif;
+  color: #2b2b2b; }
 
 .site-header {
-  background-color: #66d4b3;
   padding: 2em 0; }
-  .site-header .wrapper {
-    display: block; }
-    @media screen and (min-width: 600px) {
-      .site-header .wrapper {
-        display: flex;
-        justify-content: space-between; } }
 
 .site-footer {
   display: block;
-  text-align: center;
+  text-align: right;
   padding: 2em 0;
   margin-left: auto;
-  margin-right: auto;
-  background-color: #66d4b3; }
+  margin-right: auto; }
   @media screen and (min-width: 600px) {
     .site-footer {
       display: flex;
@@ -425,23 +419,53 @@ p {
       padding: 1px 4px;
       border-radius: 2px; }
 
+#home .wrapper {
+  position: relative; }
+
+.background-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../images/KefaloniaBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% center;
+  width: 80vh;
+  height: 80vh;
+  z-index: -1;
+  clip-path: circle(40vh at center); }
+
 .intro {
-  text-align: center;
-  color: #2b2b2b;
-  padding: 2em; }
-  .intro h1 {
-    font-family: "Oswald", sans-serif;
-    font-size: 2em;
-    font-weight: bold; }
-    @media screen and (min-width: 800px) {
-      .intro h1 {
-        font-size: 3em; } }
-  .intro h3 {
-    font-size: 1em;
-    font-weight: bold; }
-    @media screen and (min-width: 800px) {
-      .intro h3 {
-        font-size: 1.5em; } }
+  position: absolute;
+  right: 30%;
+  top: 80px; }
+  .intro .fas,
+  .intro .far {
+    color: #2b2b2b;
+    font-size: 1.5em; }
+  .intro p {
+    display: table;
+    text-align: right;
+    margin: 0 0 1em auto;
+    background-color: #fff; }
+  .intro a {
+    text-decoration: none;
+    color: #2b2b2b;
+    padding: 0 5px; }
+    .intro a:hover, .intro a:focus {
+      text-decoration: underline; }
+
+.link__portfolio {
+  background-color: #a5fd00; }
+
+.link__bio {
+  background-color: #ffae00; }
+
+.link__contact {
+  background-color: cyan; }
+
+.link__cv {
+  background-color: #ef07f7; }
 
 .contact {
   display: block;
@@ -468,24 +492,51 @@ p {
   .site-branding a {
     text-decoration: none; }
   .site-branding h1 {
-    font-family: "Oswald", sans-serif;
+    font-family: "Varela Round", sans-serif;
     font-size: 2rem;
     margin: 0; }
 
-.main-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding-left: 0; }
+.main-nav {
+  width: 200px;
+  padding: 20px 1em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #222222;
+  margin-right: -200px;
+  transition: .3s ease-in; }
+  .main-nav.menushow {
+    margin: 0; }
+    .main-nav.menushow .fa-bars {
+      color: #fff !important;
+      transition: .6s ease-in; }
+  .main-nav ul {
+    list-style: none;
+    margin-top: 3em;
+    padding: 0; }
+  .main-nav li {
+    padding: .25em; }
+  .main-nav a {
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+    font-size: 1.25em;
+    text-decoration: none; }
 
-.main-nav a {
-  padding: 0 1em;
-  font-family: "Oswald", sans-serif;
-  font-weight: lighter;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #000; }
+.menu-button {
+  position: fixed;
+  top: 20px;
+  right: 20px; }
+
+.fa-bars {
+  font-size: 1.5em;
+  color: #2b2b2b;
+  transition: .6s ease-in; }
+
+.social-icons {
+  font-size: 1.25em; }
+  .social-icons a {
+    padding: 0 .25em; }
 
 .contact-form {
   float: left;

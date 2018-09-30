@@ -1,13 +1,21 @@
 {% set body_id = "home" %}
+
+
 {% extends "layout.njk" %}
 
 {% block content %}
 
+  <div class="background-image"></div>
+
   <div class="intro">
-    <h1>A dope a.f. boilerplate for static portfolio websites</h1>
-    <h3>It uses Nunjucks templating.</h3>
-    <h3>Gulp handles the templates as well as compiling and optimising Sass, JS, HTML, and images</h3>
-    <h3>It also includes browser sync, obvs.</h3>
+
+    <p>Hi, I'm Dan, a freelance web developer from Folkestone <i class="fas fa-battery-full"></i></p>
+    <p>Take a look at some <a href="" class="link__portfolio">examples</a> of sites I've built <i class="fas fa-battery-three-quarters"></i></p>
+    <p>Jump to my <a href="" class="link__bio">bio</a> for the riveting back-story <i class="fas fa-battery-half"></i></p>
+    <p>Why not <a href="" class="link__contact">contact</a> me to chat about your project idea? <i class="fas fa-battery-quarter"></i></p>
+    <p>Download my <a href="" class="link__cv">CV</a> if that helps <i class="fas fa-battery-empty"></i></p>
+
   </div>
+
 
 {% endblock %}

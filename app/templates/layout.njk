@@ -12,7 +12,17 @@
     <link rel="stylesheet" href="css/main.css">
     <!--endbuild-->
 
-    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+    {# get the google fonts #}
+    {# <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+     #}
+    {# <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700" rel="stylesheet"> #}
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    {# <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700" rel="stylesheet"> #}
+
+    {# get the icon font #}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+
+    {# favicon #}
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 
   </head>
@@ -40,20 +50,22 @@
     <script src="js/jquery.fancybox.js"></script>
 
     <script>
-      jQuery(document).ready( function($) {
-        var $hamburger = $(".hamburger");
-        $hamburger.on("click", function(e) {
-          $hamburger.toggleClass("is-active");
-          $('body').toggleClass('is-active-menu');
-        // Do something else, like open/close menu
-        });
-        $("[data-fancybox]").fancybox({
-          slideShow : false,
-          thumbs : false,
-          loop : true,
-          infobar : true,
 
+      $(document).ready(function(){
+        $(".menu-button").click(function(event){
+          event.preventDefault();
+          $("nav").toggleClass("menushow");
+          
+          
         });
+      });
+
+      $("[data-fancybox]").fancybox({
+        slideShow : false,
+        thumbs : false,
+        loop : true,
+        infobar : true,
+
       });
     </script>
     <!-- endbuild -->

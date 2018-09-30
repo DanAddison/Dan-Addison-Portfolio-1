@@ -1,24 +1,73 @@
+#home .wrapper {
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../images/KefaloniaBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40% center;
+  width: 80vh;
+  height: 80vh;
+  z-index: -1;
+  clip-path: circle(40vh at center);
+}
+
+
+// .feature-image {
+//   position: absolute;
+//   background-image: url("../images/KefaloniaBG.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   width: 70%;
+//   height: 400px;
+// }
+
 .intro {
-  text-align: center;
-  color: $color__copy;
-  padding: 2em;
+  position: absolute;
+  right: 30%;
+  top: 80px;
 
-  h1 {
-    font-family: $headerFont;
-    font-size: 2em;
-    font-weight: bold;
-
-    @include mq($bp-m) {
-      font-size: 3em;
-    }
+  .fas,
+  .far {
+    color: $color__copy;
+    font-size: 1.5em;
+  }
+  
+  p {
+    display: table;
+    text-align: right;
+    margin: 0 0 1em auto;
+    background-color: #fff;
   }
 
-  h3 {
-    font-size: 1em;
-    font-weight: bold;
+  a {
+    text-decoration: none;
+    color: $color__copy;
+    padding: 0 5px;
 
-    @include mq($bp-m) {
-      font-size: 1.5em;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
   }
+}
+
+.link__portfolio {
+  background-color: rgb(165, 253, 0);
+}
+
+.link__bio {
+  background-color: rgb(255, 174, 0);
+}
+
+.link__contact {
+  background-color: rgb(0, 255, 255);
+}
+
+.link__cv {
+  background-color: rgb(239, 7, 247);
 }
