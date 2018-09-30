@@ -1,0 +1,45 @@
+// /*********************************************************
+// ## UTILS: global mixins, functions, helper selectors, etc
+// *********************************************************/
+@import 'utils/mixins';
+@import 'utils/placeholders';
+@import 'utils/variables';
+
+// /*********************************************************
+// ## BASE: global styles, such as resets, typography, colors, etc.
+// *********************************************************/
+@import 'base/normalize';
+@import 'base/global';
+@import 'base/typography';
+
+// /*********************************************************
+// ## LAYOUT: styling for larger layout components; e.g. nav, header, footer, etc.
+// *********************************************************/
+@import 'layout/grid';
+@import 'layout/site-header';
+@import 'layout/site-footer';
+
+// /*********************************************************
+// ## PAGES: page-specific styling, if necessary
+// *********************************************************/
+@import 'pages/home';
+@import 'pages/contact';
+
+// /*********************************************************
+// ## COMPONENTS: each self-contained component
+// *********************************************************/
+@import 'components/site-branding';
+@import 'components/main-nav';
+@import 'components/contact-form';
+@import 'components/gallery';
+@import 'components/media';
+
+// /*********************************************************
+// ## VENDORS: 3rd-party styles, mixins, etc. ie. not your responsibility!
+// *********************************************************/
+// @import 'vendors/*';
+
+// /*********************************************************
+// ## VENDORS-EXTENSIONS: overrides for 3rd-party stuff
+// *********************************************************/
+// @import 'vendors-extensions/*';

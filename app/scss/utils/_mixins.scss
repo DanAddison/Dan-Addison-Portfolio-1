@@ -1,0 +1,42 @@
+/*********************************************************
+## Media Queries
+*********************************************************/
+@mixin mq($media-min) {
+  @media screen and (min-width: $media-min) {
+      @content;
+  }
+}
+
+@mixin mq-min-max($media-min, $media-max) {
+  @media screen and (min-width: $media-min) and (max-width: $media-max) {
+    @content;
+  }
+}
+
+/*********************************************************
+## Links
+*********************************************************/
+@mixin links($color: $action, $adjust: darken, $percent: 15%) {
+	text-decoration: none;
+	color: $color;
+	transition: color .3s;
+	
+	&:hover {
+		
+		@if $adjust == lighten {
+			color: lighten($color, $percent);
+		}
+		@else {
+			color: darken($color, $percent);
+		}
+	}
+}
+
+/*********************************************************
+## Align stuff vertically
+*********************************************************/
+@mixin vertical-align($offset: -50%) {
+  position: relative;
+  top: 50%;
+  transform: translateY($offset);
+}

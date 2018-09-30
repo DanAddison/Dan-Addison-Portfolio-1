@@ -1,0 +1,27 @@
+// file for all variables, to be imported first into style.scss
+
+/* -------------------------Typography variables------------------------- */
+$mainFont:  "Lato", sans-serif;
+$headerFont: "Oswald", sans-serif;
+
+/* -------------------------Media Query variables------------------------- */
+$bp-s: 600px;
+$bp-m: 800px;
+$bp-l: 1000px;
+$bp-xl: 1200px;
+$bp-tablet: $bp-s;
+$bp-desktop: $bp-m;
+$bp-menu: $bp-desktop;
+
+/* -------------------------Color variables------------------------- */
+$color__canvas-light: #fff;
+$color__canvas-medium: #c4c2c2;
+$color__canvas-dark: #868686;
+
+$color__site: #66d4b3;
+$color__brand: $color__site;
+$color__action: $color__site;
+
+
+$color__copy: rgb(43, 43, 43);
+$color__copy-light: rgb(138, 138, 138);

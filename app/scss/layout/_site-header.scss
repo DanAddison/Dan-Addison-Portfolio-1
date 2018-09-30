@@ -1,0 +1,13 @@
+.site-header {
+  background-color: $color__site;
+  padding: 2em 0;
+
+  .wrapper {
+    display: block;
+
+    @include mq($bp-tablet) {
+      display: flex;
+      justify-content: space-between;   
+    }
+  }
+}

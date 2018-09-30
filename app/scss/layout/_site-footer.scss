@@ -1,0 +1,44 @@
+.site-footer {
+  display: block;
+  text-align: center;
+  padding: 2em 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $color__site;;
+
+  @include mq($bp-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright {
+    display: block;
+    margin-bottom: 0;
+
+    @include mq($bp-tablet) {
+      // order: -1;
+    }
+  }
+
+  .footer-icons {
+    display: block;
+    padding: 1em;
+
+    a {
+      padding: 6px 12px;
+    }
+  }
+
+
+  .credit {
+    display: block;
+
+    a {
+      color: #FFFFFF;
+      background-color: $color__copy-light;
+      text-decoration: none;
+      padding: 1px 4px;
+      border-radius: 2px;
+    }
+  }
+}
