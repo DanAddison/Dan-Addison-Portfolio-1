@@ -1,19 +1,4 @@
 /*********************************************************
-## Media Queries
-*********************************************************/
-@mixin mq($media-min) {
-  @media screen and (min-width: $media-min) {
-      @content;
-  }
-}
-
-@mixin mq-min-max($media-min, $media-max) {
-  @media screen and (min-width: $media-min) and (max-width: $media-max) {
-    @content;
-  }
-}
-
-/*********************************************************
 ## Links
 *********************************************************/
 @mixin links($color: $action, $adjust: darken, $percent: 15%) {
@@ -39,4 +24,61 @@
   position: relative;
   top: 50%;
   transform: translateY($offset);
+}
+
+// -------------------------------------------------------
+// Shift Media Queries
+// -------------------------------------------------------
+@mixin mq($media-min) {
+	@media screen and (min-width: $media-min) {
+			@content;
+	}
+}
+
+@mixin mq-min-max($media-min, $media-max) {
+	@media screen and (min-width: $media-min) and (max-width: $media-max) {
+			@content;
+	}
+}
+
+// -------------------------------------------------------
+// Shift Grid
+// -------------------------------------------------------
+
+// Generate columns names span-#
+// Called by: @include grid_columns(#) where # is the amount of columns needed
+// Perfect for use in breakpoints to use different columns
+
+@mixin grid-columns($columns){
+	@for $i from 1 through $columns{
+		.span#{$columns}-#{$i}{
+			width: ((100% / $columns)*$i);		
+		}
+	}
+	@for $i from 1 through $columns{
+		.push#{$columns}-#{$i}{
+			margin-left: ((100% / $columns)*$i);		
+		}
+	}
+	@for $i from 1 through $columns{
+		.pull#{$columns}-#{$i}{
+			margin-right: ((100% / $columns)*$i);		
+		}
+	}
+	.push-disable#{$columns}{
+		margin-left: 0;		
+	}
+	.pull-disable#{$columns}{
+		margin-right: 0;		
+	}
+	.hide-at#{$columns} {
+		display: none;
+	}
+	.block-show-at#{$columns} {
+		display: block;
+	}
+	.inline-show-at#{$columns} {
+		display: inline;
+		display: inline-block;
+	}	
 }

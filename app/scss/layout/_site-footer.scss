@@ -6,7 +6,7 @@
   margin-right: auto;
   // background-color: $color__site;
 
-  @include mq($bp-tablet) {
+  @include mq($bp-m) {
     display: flex;
     justify-content: space-between;
   }
@@ -15,7 +15,7 @@
     display: block;
     margin-bottom: 0;
 
-    @include mq($bp-tablet) {
+    @include mq($bp-m) {
       // order: -1;
     }
   }

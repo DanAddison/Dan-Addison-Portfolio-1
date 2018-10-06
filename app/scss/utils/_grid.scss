@@ -1,0 +1,158 @@
+// From Nebulo-Shift
+
+[class*="span"] {
+	width: 100%; 
+	display: block;
+	float: left;
+}
+
+.span-reverse {
+	float: right !important;
+}
+
+// ------------------------------------------------------------
+
+// Standard row
+// Rows should contain columns as children
+// You can use multiple grid denominations within each breakpoint, but each breakpoint must have unique column set-up
+// For example, you can have a 6 and 8 column grid at breakpoint b, but you can't use 6 or eight columns in other breakpoints
+.row {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $max-width;
+		
+	@include mq($bp-s) { 
+		@include grid-columns(4); 	// Four column grid
+	}
+	
+	@include mq($bp-m) { 
+		@include grid-columns(6);	// Six column grid
+	}
+	
+	@include mq($bp-l) { 
+		@include grid-columns(8);	// Eight column grid
+	}
+	
+	@include mq($bp-l) { 
+	
+		.span8-third {
+			width: 33.333333%;
+		}
+	}
+
+	@include mq($bp-xl) { 
+		@include grid-columns(12);	// Twelve column grid
+	}
+}
+
+.row__colspaced {
+	position: relative;
+	@extend %cf;
+	margin-left: -$spacing/2;
+	margin-right: -$spacing/2;
+	
+	[class*="span"] {
+		padding-left: $spacing/2;	
+		padding-right: $spacing/2;			
+	}
+}
+
+.row__coltouching {
+	position: relative;
+	@extend %cf;
+}
+
+.row--pad {
+	padding: $spacing;
+
+	@include mq($bp-m) { 
+		padding: $spacing*2 $spacing;
+	}
+	
+	& ~ .row--pad {
+		padding-top: 0;
+	}
+}
+
+.row--no-top-pad {
+	padding-top: 0;
+}
+
+.row--no-bottom-pad {
+	padding-bottom: 0;
+}
+
+.row--bp-m {
+	max-width: $bp-m;
+}
+
+.row--bp-l {
+	max-width: $bp-l;
+}
+
+.row--bp-xl {
+	max-width: $bp-xl;
+}
+
+.row--wide {
+
+	@include mq-min-max(0, $bp-l) {	
+
+		.row__colspaced  {
+			margin-left: -$spacing*1.5;
+			margin-right: -$spacing*1.5;
+		}
+	}
+}
+
+.three-col-at-bp-l {
+
+	[class*="span"]:nth-child(n + 2) {
+		margin-top: $spacing;
+	}
+	
+	@include mq($bp-m) {
+
+		[class*="span"]:nth-child(2) {
+			margin-top: 0;
+		}
+		
+		[class*="span"]:nth-child(2n +1) {
+			clear: left;
+		}
+	}	
+	
+	@include mq($bp-l) {
+
+		[class*="span"]:nth-child(3) {
+			margin-top: 0;
+		}
+		
+		[class*="span"]:nth-child(2n + 1) {
+			clear: none;
+		}
+		
+		[class*="span"]:nth-child(3n + 1) {
+			clear: left;
+		}		
+	}	
+}
+
+.one-col-to-three-at-bp-l {
+
+	[class*="span"]:nth-child(n + 2) {
+		margin-top: $spacing;
+	}
+
+	@include mq($bp-l) {
+
+		[class*="span"]:nth-child(n + 2) {
+			margin-top: 0;
+		}
+
+		[class*="span"]:nth-child(3n + 1) {
+			clear: left;
+		}		
+	}
+}

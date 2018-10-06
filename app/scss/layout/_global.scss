@@ -1,14 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-
-body {
-  background-color: $color__canvas-light;
-  position: relative;
-}
-
 .page {
   min-height: calc(100vh - 180px);
 }

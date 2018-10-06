@@ -9,7 +9,7 @@
   margin: .5rem;
   width: calc(50% - 1rem);
 
-  @include mq($bp-desktop) {
+  @include mq($bp-l) {
       width: calc(33.3333% - 1rem);
     }
 
