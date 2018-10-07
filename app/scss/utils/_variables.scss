@@ -2,9 +2,6 @@
     Sizes
 \*------------------------------------*/
 
-$size__site-main: 100%;
-$size__site-sidebar: 25%;
-
 $bp-s: 500px;
 $bp-m: 700px;
 $bp-l: 1000px;
@@ -22,81 +19,36 @@ $spacing-percent: 3%;		// Used by grid system
     Fonts
 \*------------------------------------*/
 
-$font__body: 'raleway', sans-serif;
-$font__headings: 'Montserrat', "Lucida Grande", sans-serif;
-$font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
-$font__line-height-body: 1.5;
-$font__line-height-pre: 1.6;
+$font__body: 'VT323', monospace;
+$font__headings: 'VT323', monospace;
+$font__code: Monaco, Consolas, monospace;
+$font__pre: Courier, monospace;
 
 /*------------------------------------*\
     Colours
 \*------------------------------------*/
 
+$white: #fff;
+$black: #222;
+$primary: #66d4b3;
+$secondary: #ffae00;
+
 // Backgrounds
-$color__header: #ffffff;
-$color__footer: $color__header;
-$color__header-light: #979696;
-$color__background-screen: #f1f1f1;
-$color__background-body: white;
+$color__canvas-light: $white;
+$color__canvas-medium: #c4c2c2;
+$color__canvas-dark: $black;
+$color__header: $primary;
+$color__footer: $primary;
 
 // Text
-$color__text-main: #222;
-$color__text-light: #474747;
+$color__body: $black;
+$color__body-light: #474747;
+$color__headings: $black;
 
 // Links
-$color__link: #555455;
-$color__link-visited: #ad0467;
-$color__link-hover: #1780c5;
-$color__link-bold: #383838;
+$color__action: $secondary;
 
 // Buttons
-$color__button-text: $color__text-main;
+$color__button-text: $color__body;
 $color__button-background: $color__header;
-$color__button-background--focus: $color__text-main;
-$color__button-border: black;
-$color__button-border--hover: red;
-$color__button-border--focus: red;
-
-// Forms, Fields, Search
-$color__input-text: #666;
-$color__input-text--focus: #111111;
-$color__input-border: #ccc;
-
-
-
-// ???!!!
-$color__background-hr: #ccc;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
-$color__text-screen: #21759b;
-$color__border-abbr: #666;
-
-/*********************************************************
-## old stuff to be incorporated above
-*********************************************************/
-/* -------------------------Color variables------------------------- */
-$color__canvas-light: #fff;
-$color__canvas-medium: #c4c2c2;
-$color__canvas-dark: #222222;
-
-$color__site: #66d4b3;
-$color__brand: $color__site;
-$color__action: $color__site;
-
-$color__copy: rgb(43, 43, 43);
-$color__copy-light: rgb(138, 138, 138);
-
-$color__white: #fff;
-$color__black: #000;
-
-/* -------------------------Typography variables------------------------- */
-// $mainFont:  'VT323', monospace;
-// $headerFont: 'VT323', monospace;
-// $mainFont:  'Roboto Mono', monospace;
-// $headerFont: 'Roboto Mono', monospace;
-// $mainFont:  'Roboto', sans-serif;
-// $headerFont: 'Roboto', sans-serif;
-$mainFont:  'Varela Round', sans-serif;
-$headerFont: 'Varela Round', sans-serif;
+$color__button-border: $black;
