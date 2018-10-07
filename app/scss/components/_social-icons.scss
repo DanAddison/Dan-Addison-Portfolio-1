@@ -1,0 +1,13 @@
+.social-icons {
+
+  i {
+    padding: .5em;
+    font-size: 1.5em;
+    transition: all .2s ease;
+    
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+}

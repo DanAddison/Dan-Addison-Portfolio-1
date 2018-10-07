@@ -33,7 +33,7 @@
 
   .fas,
   .far {
-    color: $color__copy;
+    color: $color__body;
     font-size: 1.5em;
   }
   
@@ -46,7 +46,7 @@
 
   a {
     text-decoration: none;
-    color: $color__copy;
+    color: $color__body;
     padding: 0 5px;
 
     &:hover,

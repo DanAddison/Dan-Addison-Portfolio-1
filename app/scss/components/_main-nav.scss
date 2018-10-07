@@ -14,7 +14,7 @@
     margin: 0;
 
     .fa-bars {
-      color: $color__white !important;
+      color: $white !important;
       transition: .6s ease-in;
     }
 
@@ -31,8 +31,7 @@
   }
   
   a {
-    color: $color__white;
-    font-family: $headerFont;
+    color: $white;
     font-size: 1.25em;
     text-decoration: none;
   }
@@ -46,7 +45,7 @@
 
 .fa-bars {
   font-size: 1.5em;
-  color: $color__copy;
+  color: $color__body;
   transition: .6s ease-in;
 }
 
