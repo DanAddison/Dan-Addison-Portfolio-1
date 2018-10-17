@@ -1,5 +1,6 @@
 
 .main-nav {
+  z-index: 10;
   width: 200px;
   padding: 20px 1em;
   position: fixed;
@@ -34,6 +35,11 @@
     color: $white;
     font-size: 1.25em;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }
 

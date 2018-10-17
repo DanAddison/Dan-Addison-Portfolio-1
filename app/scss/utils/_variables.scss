@@ -19,8 +19,8 @@ $spacing-percent: 3%;		// Used by grid system
     Fonts
 \*------------------------------------*/
 
-$font__body: 'VT323', monospace;
-$font__headings: 'VT323', monospace;
+$font__body: 'Cutive Mono', monospace;
+$font__headings: 'Cutive Mono', monospace;
 $font__code: Monaco, Consolas, monospace;
 $font__pre: Courier, monospace;
 
@@ -35,18 +35,20 @@ $secondary: #ffae00;
 
 // Backgrounds
 $color__canvas-light: $white;
-$color__canvas-medium: #c4c2c2;
+$color__canvas-medium: #eff8fa;
 $color__canvas-dark: $black;
+$color__transparent: rgba(255, 255, 255, 0.7);
 $color__header: $primary;
 $color__footer: $primary;
 
 // Text
 $color__body: $black;
 $color__body-light: #474747;
+$color__body-lightest: #666666;
 $color__headings: $black;
 
 // Links
-$color__action: $secondary;
+$color__action: $primary;
 
 // Buttons
 $color__button-text: $color__body;

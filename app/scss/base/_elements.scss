@@ -27,8 +27,8 @@ html {
 body {
   font-size: 1em;
   line-height: 1.5;
-  font-weight: 400;
-  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-family: $font__body, Helvetica, Arial, sans-serif;
   color: #222;
 }
 
@@ -222,14 +222,14 @@ label > .label-body {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
-  list-style: circle inside;
-}
+// ul {
+//   list-style: circle inside;
+// }
 ol {
   list-style: decimal inside; 
 }
 ol, ul {
-  padding-left: 0;
+  padding-left: 1.5em;
   margin-top: 0;
 }
 ul ul,
