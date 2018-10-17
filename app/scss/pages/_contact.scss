@@ -1,33 +1,18 @@
 .contact {
-  @extend %cf;
-  display: block;
-  text-align: center;
-  padding: 3rem 2rem;
+  position: absolute;
+  top: 70vh;
+  right: 5vw;
+  
+  @include mq($bp-l) {
+    top: 20vh;
+    right: 10vw;
+    margin-bottom: 0;
+  }
 
-  .wrapper {
-
-    @include mq($bp-m) {
-      padding: 3rem 5rem;
-      max-width: $bp-l;
-    }
+  @include mq($bp-xl) {
+    right: 20vw;
   }
     
-  .portrait {
-    float: left;
-    width: 100%;
-
-    img {
-      width: 500px;
-      max-width: 100%;
-      height: auto;
-      
-    }
-
-    @include mq($bp-m) {
-      width: 50%;
-      padding: 2rem 1rem 3rem;
-    }
-  }
 }
 
 

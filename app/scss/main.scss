@@ -26,6 +26,7 @@
 // *********************************************************/
 @import 'pages/home';
 @import 'pages/contact';
+@import 'pages/bio';
 
 // /*********************************************************
 // ## COMPONENTS
@@ -39,9 +40,9 @@
 // /*********************************************************
 // ## VENDORS: 3rd-party styles, mixins, etc. ie. not your responsibility!
 // *********************************************************/
-// @import 'vendors/*';
+@import 'vendors/jquery.fancybox';
 
 // /*********************************************************
 // ## VENDORS-EXTENSIONS: overrides for 3rd-party stuff
 // *********************************************************/
-// @import 'vendors-extensions/*';
+@import 'vendors-extensions/da.fancybox';

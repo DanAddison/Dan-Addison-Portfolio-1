@@ -1,14 +1,57 @@
-.page {
-  min-height: calc(100vh - 180px);
+body {
+  background-color: $color__canvas-medium;
 }
 
-/* center elements on page */
-.wrapper {
-  width: 95%;
-  max-width: 1200px;
-  margin: 0 auto;
+.page {
+  min-height: calc(100vh - 64px);
 }
 
 .hidden {
   display: none;
+}
+
+.background-image {
+  z-index: -1;
+  position: fixed;
+  top: 10vh;
+  left: 5vw;
+  
+  img {
+    max-height: 80vh;
+    max-width: 90vw;
+  }
+
+  @include mq($bp-xl) {
+    left: 10vw;
+  }
+}
+
+.text-content {
+  position: absolute;
+  right: 0px;
+  top: 50vh;
+  width: 100%;
+  text-align: right;
+  margin-left: auto;
+  padding: $spacing;
+  margin-bottom: $spacing*2;
+
+  h1 {
+    display: inline-block;
+    font-size: 1.25em;
+    background-color: $color__transparent;
+  }
+
+  @include mq($bp-m) {
+    top: 20vh;
+    margin-bottom: 0;
+  }
+  
+  @include mq($bp-l) {
+    right: 18vw;
+  }
+
+  @include mq($bp-xl) {
+    right: 24vw;
+  }
 }

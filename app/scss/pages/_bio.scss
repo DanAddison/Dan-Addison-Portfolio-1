@@ -1,0 +1,19 @@
+.biography {
+
+  h1 {
+    padding-right: $spacing/2;
+  }
+
+  ul {
+    list-style: none;
+    max-width: 700px;
+    margin-left: auto;
+    padding-right: $spacing/2;
+  }
+  
+  li {
+    display: inline-block;
+    margin: 0 0 1em auto;
+    background-color: $color__transparent;
+  }
+}
