@@ -1,16 +1,34 @@
 .contact-form {
+  margin-left: auto;
+  max-width: 500px;
+  padding-top: $spacing;
   text-align: left;
-  width: 100%;
-  padding: 1rem;
+
+  .hidden {
+    display: none;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  label {
+    margin-bottom: 0;
+  }
 
   input,
   select,
   textarea {
     width: 100%;
-    margin: .5rem 0;
+    margin: .5rem 0 0;
   }
 
+  .contact-form__button {
+    width: auto;
+  }
+  
   button {
+    margin-bottom: 0;
     padding: .25rem 1rem;
 
     &:hover,

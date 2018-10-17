@@ -12,13 +12,17 @@ body {
 
 .background-image {
   z-index: -1;
-  position: fixed;
-  top: 10vh;
+  position: absolute;
+  top: 60px;
   left: 5vw;
   
   img {
-    max-height: 80vh;
+    max-height: calc(100vh - 100px);
     max-width: 90vw;
+  }
+
+  @include mq($bp-m) {
+    position: fixed;
   }
 
   @include mq($bp-xl) {
@@ -28,11 +32,10 @@ body {
 
 .text-content {
   position: absolute;
-  right: 0px;
-  top: 50vh;
-  width: 100%;
+  left: 0px;
+  top: 400px;
+  width: auto;
   text-align: right;
-  margin-left: auto;
   padding: $spacing;
   margin-bottom: $spacing*2;
 
@@ -42,16 +45,23 @@ body {
     background-color: $color__transparent;
   }
 
+  p {
+    display: inline-block;
+    margin: 0 0 1em auto;
+    background-color: $color__transparent;
+  }
+
   @include mq($bp-m) {
-    top: 20vh;
+    top: 250px;
+    left: 200px;
     margin-bottom: 0;
   }
   
   @include mq($bp-l) {
-    right: 18vw;
+    left: 350px;
   }
 
   @include mq($bp-xl) {
-    right: 24vw;
+    left: 500px;
   }
 }

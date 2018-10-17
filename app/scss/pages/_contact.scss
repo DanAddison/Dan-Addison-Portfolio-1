@@ -1,18 +1,48 @@
-.contact {
+#contact .background-image {
   position: absolute;
-  top: 70vh;
-  right: 5vw;
-  
+
   @include mq($bp-l) {
-    top: 20vh;
-    right: 10vw;
-    margin-bottom: 0;
+    position: fixed;
+  }
+}
+
+.contact {
+  margin-bottom: $spacing*4;
+   
+  @include mq($bp-s) {
+    top: 600px;
+  }
+
+  @include mq($bp-l) {
+    top: 150px;
+    max-width: 65vw;
   }
 
   @include mq($bp-xl) {
-    right: 20vw;
+
   }
     
+}
+
+// fancybox hidden element
+#cost-info {
+  text-align: center;
+  margin: $spacing;
+  max-width: $bp-m;
+  padding: $spacing $spacing;
+
+  @include mq($bp-m) {
+    padding: $spacing $spacing*2;
+  }
+
+  h1 {
+    font-size: 1.75em;
+    font-weight: bold;
+  }
+
+  .as-standard {
+    font-style: italic;
+  }
 }
 
 
