@@ -60,8 +60,4 @@ body {
   @include mq($bp-l) {
     left: 350px;
   }
-
-  @include mq($bp-xl) {
-    left: 500px;
-  }
 }
