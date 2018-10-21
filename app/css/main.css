@@ -1057,9 +1057,10 @@ body {
   @media screen and (min-width: 700px) {
     .background-image {
       position: fixed; } }
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 1500px) {
     .background-image {
-      left: 10vw; } }
+      top: 20vh;
+      left: 15vw; } }
 
 .text-content {
   position: absolute;
@@ -1085,6 +1086,10 @@ body {
   @media screen and (min-width: 1000px) {
     .text-content {
       left: 350px; } }
+  @media screen and (min-width: 1500px) {
+    .text-content {
+      top: 30vh;
+      left: 35vw; } }
 
 .site-header {
   padding: 2em 0; }
@@ -1137,13 +1142,13 @@ body {
   background-color: #a5fd00; }
 
 .link__bio {
-  background-color: #ffae00; }
+  background-color: #ffe600; }
 
 .link__contact {
   background-color: cyan; }
 
 .link__cv {
-  background-color: #f43efa; }
+  background-color: #fc74b8; }
 
 #contact .background-image {
   position: absolute; }
@@ -1165,6 +1170,9 @@ body {
       top: 100px;
       max-width: 750px;
       left: 350px; } }
+  @media screen and (min-width: 1500px) {
+    .contact {
+      top: 25vh; } }
   .contact i {
     transition: .1s ease-in; }
     .contact i:hover, .contact i:focus {
@@ -1174,7 +1182,8 @@ body {
   text-align: center;
   margin: 2em;
   max-width: 700px;
-  padding: 2em 2em; }
+  padding: 2em 2em;
+  font-size: .8em; }
   #cost-info h1 {
     font-size: 1.25em;
     font-weight: bold; }
@@ -1182,7 +1191,8 @@ body {
     font-style: italic; }
   @media screen and (min-width: 700px) {
     #cost-info {
-      padding: 2em 4em; }
+      padding: 2em 4em;
+      font-size: 1em; }
       #cost-info h1 {
         font-size: 1.5em; } }
 

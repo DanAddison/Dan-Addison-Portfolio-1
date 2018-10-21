@@ -24,6 +24,10 @@
     left: 350px;
   }    
 
+  @include mq($bp-xxl) {
+    top: 25vh;
+  }
+
   i {
     transition: .1s ease-in;
 
@@ -40,6 +44,7 @@
   margin: $spacing;
   max-width: $bp-m;
   padding: $spacing $spacing;
+  font-size: .8em;
 
   
   h1 {
@@ -53,6 +58,7 @@
 
   @include mq($bp-m) {
     padding: $spacing $spacing*2;
+    font-size: 1em;
 
     h1 {
       font-size: 1.5em;
