@@ -15,10 +15,11 @@
 
   @include mq($bp-m) {
     left: 0;
+    padding-right: 3em;
   }
 
   @include mq($bp-l) {
-    top: 150px;
+    top: 100px;
     max-width: 750px;
     left: 350px;
   }    

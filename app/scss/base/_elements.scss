@@ -95,7 +95,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: $black;
   text-align: center;
   font-size: 12px;
   font-weight: 600;
@@ -104,10 +104,11 @@ input[type="button"] {
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
+  // border-radius: 4px;
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box;
+  transition: all .2s ease;
 }
 
 .button:hover,
@@ -166,7 +167,7 @@ select {
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border: 1px solid #D1D1D1;
-  border-radius: 4px;
+  // border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
 }

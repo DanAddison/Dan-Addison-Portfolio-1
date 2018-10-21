@@ -52,7 +52,7 @@ body {
   }
 
   @include mq($bp-m) {
-    top: 250px;
+    top: 150px;
     left: 200px;
     margin-bottom: 0;
   }

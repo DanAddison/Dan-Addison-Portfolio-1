@@ -769,7 +769,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: #222;
   text-align: center;
   font-size: 12px;
   font-weight: 600;
@@ -778,10 +778,10 @@ input[type="button"] {
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
   border: 1px solid #bbb;
   cursor: pointer;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: all .2s ease; }
 
 .button:hover,
 button:hover,
@@ -836,7 +836,6 @@ select {
   /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border: 1px solid #D1D1D1;
-  border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
 
@@ -1080,7 +1079,7 @@ body {
     background-color: rgba(255, 255, 255, 0.8); }
   @media screen and (min-width: 700px) {
     .text-content {
-      top: 250px;
+      top: 150px;
       left: 200px;
       margin-bottom: 0; } }
   @media screen and (min-width: 1000px) {
@@ -1159,10 +1158,11 @@ body {
       top: 600px; } }
   @media screen and (min-width: 700px) {
     .contact {
-      left: 0; } }
+      left: 0;
+      padding-right: 3em; } }
   @media screen and (min-width: 1000px) {
     .contact {
-      top: 150px;
+      top: 100px;
       max-width: 750px;
       left: 350px; } }
   .contact i {
@@ -1215,16 +1215,25 @@ body {
     margin: 0; }
 
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   z-index: 10;
   width: 220px;
-  padding: 20px 1em;
+  padding: 100px 1em 25px;
   position: fixed;
-  top: 0;
+  top: 0px;
   right: 0;
   height: 100%;
   background-color: #237d8d;
   margin-right: -220px;
   transition: .3s ease-in; }
+  .main-nav .site-title {
+    position: absolute;
+    top: 90px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #fff; }
   .main-nav.menushow {
     margin: 0; }
     .main-nav.menushow .fa-bars {
@@ -1235,7 +1244,7 @@ body {
     margin-top: 3em;
     padding: 0; }
   .main-nav li {
-    padding: .25em; }
+    padding: .1em; }
   .main-nav a {
     color: #fff;
     font-size: 1.25em;
@@ -1280,7 +1289,8 @@ body {
     margin-bottom: 0;
     padding: .25rem 1rem; }
     .contact-form button:hover, .contact-form button:focus {
-      background-color: #237d8d; }
+      background-color: #237d8d;
+      color: #fff; }
 
 .gallery {
   display: flex;
