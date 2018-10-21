@@ -1,0 +1,83 @@
+.portfolio__header {
+  max-width: $bp-m;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  h1 {
+    // background-color: $color__transparent;
+    margin-bottom: $spacing/4;
+  }
+
+  // p {
+  //   background-color: $color__transparent;
+  // }
+}
+
+.project {
+  // @extend %cf;
+  background-color: $color__canvas-dark;
+  padding: $spacing/2;
+
+  @include mq($bp-l) {
+    display: flex;
+  }
+}
+
+.project__gallery {
+  
+  @include mq($bp-l) {
+    width: 50%;
+    float: left;
+  }
+  
+  .project__gallery-image {
+    margin-bottom: $spacing;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56%;
+    overflow: hidden;
+  }
+  
+  .project__gallery-thumb {
+    height: 100px;
+    width: 150px;
+    overflow: hidden;
+    padding-right: $spacing/2;
+    padding-bottom: $spacing/2;
+    float: left;
+    
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+.project__info {
+  
+  @include mq($bp-l) {
+    width: 50%;
+    float: left;
+    padding-left: $spacing;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.project__info-title {
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+
+.project__info-description {
+  margin-bottom: $spacing;
+}
+
+.project__info-tech {
+  margin-top: auto;
+  color: $color__body-light;
+}

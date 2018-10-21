@@ -25,8 +25,9 @@
 // ## PAGES
 // *********************************************************/
 @import 'pages/home';
-@import 'pages/contact';
+@import 'pages/portfolio';
 @import 'pages/bio';
+@import 'pages/contact';
 
 // /*********************************************************
 // ## COMPONENTS
@@ -41,6 +42,8 @@
 // ## VENDORS: 3rd-party styles, mixins, etc. ie. not your responsibility!
 // *********************************************************/
 @import 'vendors/jquery.fancybox';
+@import 'vendors/slick/slick';
+@import 'vendors/slick/slick-theme';
 
 // /*********************************************************
 // ## VENDORS-EXTENSIONS: overrides for 3rd-party stuff

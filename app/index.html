@@ -91,6 +91,7 @@
 
     <script>
 
+      // nav menu open/close
       $(document).ready(function(){
         $(".menu-button").click(function(event){
           event.preventDefault();
@@ -106,6 +107,7 @@
         }
       });
 
+      // fancybox lightbox
       $("[data-fancybox]").fancybox({
         slideShow : false,
         thumbs : false,
@@ -114,7 +116,28 @@
 
       });
 
+      // slick slider
+      function initSlider() {
+        $('.project__gallery-image').slick({
+          adaptiveHeight: false,
+          infinite: true,
+          autoplay: false,
+          arrows: false,
+          lazyLoad: 'ondemand'
+          // focusOnSelect: true
+        });
 
+        $('.project__gallery a').click(function(e){
+          e.preventDefault();
+          slideIndex = $(this).parent().index();
+          $('.project__gallery-image').slick('slickGoTo', slideIndex);
+        });
+
+      }
+
+      $(document).ready(function(){
+        initSlider();
+      });
 
     </script>
     <!-- endbuild -->

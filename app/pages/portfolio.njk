@@ -1,0 +1,69 @@
+{% set body_id = "portfolio" %}
+
+
+{% extends "layout.njk" %}
+
+{% block content %}
+
+  <div class="row row--pad">
+
+    <div class="portfolio__header">
+      <h1>Portfolio</h1>
+      <p>When I'm not building bespoke WordPress sites with the team at <a href="https://nebulodesign.com" target="blank">Nebulo</a>, I'm working on solo freelance projects. Here are some examples:</p>
+    </div>
+
+  </div><!-- row -->
+
+  <div class="row row--pad">
+    <div class="project">
+
+      <div class="project__gallery">
+
+        <div class="project__gallery-image">
+          <div class="slide">
+            <img src="images/portfolio/PP1.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="project__gallery-thumb">
+          <a href="#">
+            <img src="images/portfolio/PP2.jpg" alt="">
+          </a>
+        </div>
+        <div class="project__gallery-thumb">
+          <a href="#">
+            <img src="images/portfolio/PP3.jpg" alt="">
+          </a>
+        </div>
+        <div class="project__gallery-thumb">
+          <a href="#">
+            <img src="images/portfolio/PP4.jpg" alt="">
+          </a>
+        </div>
+        <div class="project__gallery-thumb">
+          <a href="#">
+            <img src="images/portfolio/PP5.jpg" alt="">
+          </a>
+        </div>
+
+      </div><!-- project__gallery -->
+
+      <div class="project__info">
+
+        <h2 class="project__info-title">Pen & Plant</h2>
+        <p><a class="project__info-link" href="#">Live site <i class="fas fa-external-link-alt"></i></a></p>
+
+        <div class="project__info-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum.</p>
+        </div>
+
+        <p class="project__info-tech"><span>Tech Stack:</span><br>WordPress, WooCommerce, Sass, Nunjucks, jQuery, Gulp, Git, Docsify</p>
+
+
+      </div><!-- project__info -->
+
+    </div><!-- project -->
+  </div><!-- row -->
+
+{% endblock %}
