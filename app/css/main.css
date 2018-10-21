@@ -1244,9 +1244,9 @@ body {
     text-transform: uppercase;
     font-size: 1.5em;
     color: #fff; }
-  .main-nav.menushow {
+  .main-nav.is-active-menu {
     margin: 0; }
-    .main-nav.menushow .fa-bars {
+    .main-nav.is-active-menu .fa-bars {
       color: #fff !important;
       transition: .6s ease-in; }
   .main-nav ul {
