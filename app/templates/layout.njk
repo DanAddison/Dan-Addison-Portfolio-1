@@ -40,6 +40,7 @@
     <!--build:js js/main.min.js -->
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/jquery.fancybox.js"></script>
+    <script src="js/slick.js"></script>
 
     <script>
 
@@ -69,26 +70,18 @@
       });
 
       // slick slider
-      function initSlider() {
-        $('.project__gallery-image').slick({
-          adaptiveHeight: false,
-          infinite: true,
-          autoplay: false,
-          arrows: false,
-          lazyLoad: 'ondemand'
-          // focusOnSelect: true
-        });
+      $('.project__gallery-image').slick({
+        adaptiveHeight: false,
+        infinite: true,
+        autoplay: true,
+        arrows: false,
+        // focusOnSelect: true
+      });
 
-        $('.project__gallery a').click(function(e){
-          e.preventDefault();
-          slideIndex = $(this).parent().index();
-          $('.project__gallery-image').slick('slickGoTo', slideIndex);
-        });
-
-      }
-
-      $(document).ready(function(){
-        initSlider();
+      $('.project__gallery a').click(function(e){
+        e.preventDefault();
+        slideIndex = $(this).parent().index();
+        $('.project__gallery-image').slick('slickGoTo', slideIndex);
       });
 
     </script>
