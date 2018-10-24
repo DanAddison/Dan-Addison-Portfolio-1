@@ -1200,7 +1200,7 @@ body {
 
 .project__info-title {
   font-size: 2em;
-  margin-bottom: .5em; }
+  margin-bottom: .25em; }
 
 .project__info-description {
   margin-bottom: 2em; }
@@ -2237,7 +2237,7 @@ body.compensate-for-scrollbar {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("scss/vendors/slick/ajax-loader.gif") center center no-repeat; }
+  background: #fff url("../scss/vendors/slick/ajax-loader.gif") center center no-repeat; }
 
 /* Icons */
 /* Arrows */

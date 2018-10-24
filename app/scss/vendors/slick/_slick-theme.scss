@@ -7,9 +7,9 @@
 // "\2192" outputs ascii character "→"
 // "\2022" outputs ascii character "•"
 
-$slick-font-path: "scss/vendors/slick/fonts/" !default;
+$slick-font-path: "../scss/vendors/slick/fonts/" !default;
 $slick-font-family: "app/slick" !default;
-$slick-loader-path: "scss/vendors/slick/" !default;
+$slick-loader-path: "../scss/vendors/slick/" !default;
 $slick-arrow-color: rgb(53, 53, 53) !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
