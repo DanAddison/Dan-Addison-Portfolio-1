@@ -168,18 +168,20 @@
       });
 
       // slick slider
-      $('.project__gallery-image').slick({
-        adaptiveHeight: false,
-        infinite: true,
-        autoplay: true,
-        arrows: false,
-        // focusOnSelect: true
-      });
+      $(document).ready(function(){
+        $('.project__gallery-image').slick({
+          adaptiveHeight: false,
+          infinite: true,
+          arrows: true,
+          dots: true,
+          // focusOnSelect: true
+        });
 
-      $('.project__gallery a').click(function(e){
-        e.preventDefault();
-        slideIndex = $(this).parent().index();
-        $('.project__gallery-image').slick('slickGoTo', slideIndex);
+        $('.project__gallery-thumbs a').click(function(e){
+          e.preventDefault();
+          slideIndex = $(this).index();
+          $('.project__gallery-image').slick('slickGoTo', slideIndex);
+        });
       });
 
     </script>
