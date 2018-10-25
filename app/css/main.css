@@ -1139,13 +1139,13 @@ body {
     text-decoration: underline; }
 
 .link__portfolio {
-  background-color: #a5fd00; }
-
-.link__bio {
   background-color: #ffe600; }
 
-.link__contact {
+.link__bio {
   background-color: cyan; }
+
+.link__contact {
+  background-color: #a5fd00; }
 
 .link__cv {
   background-color: #ff8f8f; }
