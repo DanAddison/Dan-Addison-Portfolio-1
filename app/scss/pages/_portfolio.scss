@@ -1,3 +1,7 @@
+// #portfolio {
+//   background-color: $white;
+// }
+
 .portfolio__header {
   max-width: $bp-m;
   margin-left: auto;
@@ -18,6 +22,10 @@
   // @extend %cf;
   background-color: $color__canvas-dark;
   padding: $spacing/2;
+
+  @include mq($bp-m) {
+    padding: $spacing;
+  }
 
   @include mq($bp-l) {
     display: flex;
