@@ -20,8 +20,8 @@ $spacing-percent: 3%;		// Used by grid system
     Fonts
 \*------------------------------------*/
 
-$font__body: 'Cutive Mono', monospace;
-$font__headings: 'Cutive Mono', monospace;
+$font__body: 'Roboto', sans-serif;
+$font__headings: 'Roboto', sans-serif;
 $font__code: Monaco, Consolas, monospace;
 $font__pre: Courier, monospace;
 
@@ -38,7 +38,7 @@ $secondary: #ffae00;
 $color__canvas-light: $white;
 $color__canvas-medium: #eff8fa;
 $color__canvas-dark: #c1c9ca;
-$color__transparent: rgba(255, 255, 255, 0.8);
+$color__transparent: rgba(255, 255, 255, 0.7);
 $color__header: $primary;
 $color__footer: $primary;
 

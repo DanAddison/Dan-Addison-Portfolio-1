@@ -698,15 +698,15 @@ html {
 body {
   font-size: 1em;
   line-height: 1.5;
-  font-weight: 600;
-  font-family: "Cutive Mono", monospace, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
   color: #222; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "Cutive Mono", monospace;
+  font-family: "Roboto", sans-serif;
   margin-top: 0;
   margin-bottom: 1em; }
 
@@ -1064,7 +1064,7 @@ body {
 
 .text-content {
   position: absolute;
-  left: 0px;
+  right: 0px;
   top: 400px;
   width: auto;
   text-align: right;
@@ -1073,23 +1073,23 @@ body {
   .text-content h1 {
     display: inline-block;
     font-size: 1.25em;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: rgba(255, 255, 255, 0.7); }
   .text-content p {
     display: inline-block;
     margin: 0 0 1em auto;
-    background-color: rgba(255, 255, 255, 0.8); }
+    padding: 0 .5em;
+    background-color: rgba(255, 255, 255, 0.7); }
   @media screen and (min-width: 700px) {
     .text-content {
       top: 150px;
-      left: 200px;
+      right: 100px;
       margin-bottom: 0; } }
   @media screen and (min-width: 1000px) {
     .text-content {
-      left: 350px; } }
+      right: 250px; } }
   @media screen and (min-width: 1500px) {
     .text-content {
-      top: 30vh;
-      left: 35vw; } }
+      top: 30vh; } }
 
 .site-header {
   padding: 2em 0; }
@@ -1123,32 +1123,26 @@ body {
 
 .intro h1 {
   font-size: 1.25em;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.7); }
 
 .intro p {
   display: table;
   text-align: right;
   margin: 0 0 1em auto;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.7); }
 
 .intro a {
   text-decoration: none;
-  color: #222;
+  color: #fff;
   padding: 0 5px; }
   .intro a:hover, .intro a:focus {
     text-decoration: underline; }
 
-.link__portfolio {
-  background-color: #ffe600; }
-
-.link__bio {
-  background-color: cyan; }
-
-.link__contact {
-  background-color: #a5fd00; }
-
+.link__portfolio,
+.link__bio,
+.link__contact,
 .link__cv {
-  background-color: #ff8f8f; }
+  background-color: #237d8d; }
 
 .portfolio__header {
   max-width: 700px;
@@ -1213,7 +1207,7 @@ body {
   color: #474747; }
 
 .biography h1 {
-  padding-right: 1em; }
+  padding: 0 .5em; }
 
 .biography ul {
   list-style: none;
@@ -1224,7 +1218,8 @@ body {
 .biography li {
   display: table;
   margin: 0 0 1em auto;
-  background-color: rgba(255, 255, 255, 0.8); }
+  padding: 0 .5em;
+  background-color: rgba(255, 255, 255, 0.7); }
 
 .biography i {
   transition: .1s ease-in; }
@@ -1238,19 +1233,20 @@ body {
       position: fixed; } }
 
 .contact {
-  margin-bottom: 8em; }
+  margin-bottom: 8em;
+  right: 0; }
   @media screen and (min-width: 500px) {
     .contact {
-      top: 600px; } }
+      top: 550px; } }
   @media screen and (min-width: 700px) {
     .contact {
-      left: 0;
-      padding-right: 3em; } }
+      max-width: 600px; } }
   @media screen and (min-width: 1000px) {
     .contact {
-      top: 100px;
-      max-width: 750px;
-      left: 350px; } }
+      top: 100px; } }
+  @media screen and (min-width: 1300px) {
+    .contact {
+      margin-right: 200px; } }
   @media screen and (min-width: 1500px) {
     .contact {
       top: 25vh; } }
@@ -1282,7 +1278,7 @@ body {
   .site-branding a {
     text-decoration: none; }
   .site-branding h1 {
-    font-family: "Cutive Mono", monospace;
+    font-family: "Roboto", sans-serif;
     font-size: 2rem;
     margin: 0; }
 
@@ -1346,17 +1342,21 @@ body {
   text-align: left; }
   .contact-form .hidden {
     display: none; }
-  .contact-form p {
-    width: 100%; }
+  .contact-form .contact-form__label {
+    width: 100%;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.5); }
   .contact-form label {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-weight: normal; }
   .contact-form input,
   .contact-form select,
   .contact-form textarea {
     width: 100%;
     margin: .5rem 0 0; }
   .contact-form .contact-form__button {
-    width: auto; }
+    width: auto;
+    padding: 0; }
   .contact-form button {
     margin-bottom: 0;
     padding: .25rem 1rem; }

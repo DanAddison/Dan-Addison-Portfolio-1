@@ -8,22 +8,25 @@
 
 .contact {
   margin-bottom: $spacing*4;
+  right: 0;
    
   @include mq($bp-s) {
-    top: 600px;
+    top: 550px;
   }
 
   @include mq($bp-m) {
-    left: 0;
-    padding-right: 3em;
+    max-width: 600px;
+
   }
 
   @include mq($bp-l) {
     top: 100px;
-    max-width: 750px;
-    left: 350px;
   }    
 
+  @include mq($bp-xl) {
+    margin-right: 200px;
+  }
+  
   @include mq($bp-xxl) {
     top: 25vh;
   }

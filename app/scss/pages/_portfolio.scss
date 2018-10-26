@@ -1,5 +1,5 @@
 // #portfolio {
-//   background-color: $white;
+  
 // }
 
 .portfolio__header {
@@ -9,17 +9,11 @@
   text-align: center;
 
   h1 {
-    // background-color: $color__transparent;
     margin-bottom: $spacing/4;
   }
-
-  // p {
-  //   background-color: $color__transparent;
-  // }
 }
 
 .project {
-  // @extend %cf;
   background-color: $color__canvas-dark;
   padding: $spacing/2;
 

@@ -33,7 +33,7 @@ body {
 
 .text-content {
   position: absolute;
-  left: 0px;
+  right: 0px;
   top: 400px;
   width: auto;
   text-align: right;
@@ -49,21 +49,21 @@ body {
   p {
     display: inline-block;
     margin: 0 0 1em auto;
+    padding: 0 .5em;
     background-color: $color__transparent;
   }
 
   @include mq($bp-m) {
     top: 150px;
-    left: 200px;
+    right: 100px;
     margin-bottom: 0;
   }
   
   @include mq($bp-l) {
-    left: 350px;
+    right: 250px;
   }
 
   @include mq($bp-xxl) {
     top: 30vh;
-    left: 35vw;
   }
 }
