@@ -1205,6 +1205,8 @@ body {
 .project__info-tech {
   margin-top: auto;
   color: #474747; }
+  .project__info-tech span {
+    color: #222; }
 
 .biography h1 {
   padding: 0 .5em; }

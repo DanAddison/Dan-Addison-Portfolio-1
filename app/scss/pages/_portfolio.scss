@@ -82,4 +82,8 @@
 .project__info-tech {
   margin-top: auto;
   color: $color__body-light;
+
+  span {
+    color: $color__body;
+  }
 }
