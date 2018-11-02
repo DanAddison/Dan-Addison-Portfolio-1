@@ -34,7 +34,14 @@ $(document).ready(function(){
 
   $('.project__gallery-thumbs a').click(function(e){
     e.preventDefault();
-    slideIndex = $(this).index();
-    $('.project__gallery-image').slick('slickGoTo', slideIndex);
+    $imageThumb = $(this);
+    slideIndex = $imageThumb.index();
+    $imageThumbContainer = $imageThumb.parent();
+    $sliderContainer = $imageThumbContainer.prev( '.project__gallery-image' );
+
+    $sliderContainer.slick('slickGoTo', slideIndex);
+
+    //    $galleryImage = $this.parent().prev( '.project__gallery-image' ).slick('slickGoTo', slideIndex);
+//    $('.project__gallery-image').slick('slickGoTo', slideIndex);
   });
 });
