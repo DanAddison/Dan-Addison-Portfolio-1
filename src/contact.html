@@ -3,13 +3,13 @@
 <html lang="en">
   <head>
     <title>Dan Addison</title>
-    <meta name="description" content="my static site template">
+    <meta name="description" content="my web developer portfolio site">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <!-- essential comment for gulp to minify and put css into dist folder: -->
     <!--build:css css/styles.min.css-->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <!--endbuild-->
 
     
@@ -24,7 +24,7 @@
 
   </head>
 
-  <body id="home">
+  <body id="contact">
 
     <header class="site-header"> 
 
@@ -61,18 +61,44 @@
   <div class="row row--pad">
 
     <div class="background-image">
-      <img src="assets/images/sintra5.png" alt="Dan on a boulder ascending Sintra, Portugal, 2017">
+      <img src="assets/images/snowdon5.png" alt="Dan ascending Mt Snowdon, 2018">
     </div>
 
-    <div class="text-content intro">
+    <div class="text-content contact">
 
-      <h1>Hi! I'm Dan, a freelance web developer from Folkestone</h1>
-      <p>Take a look at some <a href="portfolio.html" class="link__portfolio">examples</a> of websites I've built</p>
-      <p>Check out my <a href="bio.html" class="link__bio">bio</a> if you're curious to know more</p>
-      <p>Why not <a href="contact.html" class="link__contact">contact</a> me to chat about your website idea?</p>
-      <p>Download my <a href="assets/documents/DA_developer_CV.pdf" target="blank" class="link__cv">CV</a> if that's useful</p>
 
-    </div>
+      <p>I am available for freelance web development work.</p>
+      <p>I deliver secure, maintainable, responsive websites, tailor made for you.</p>
+      <p>Need help to bring your project to life? Let’s chat.</p>
+      <p>Reach out by completing the contact form below. <a data-fancybox data-src="#cost-info" href="javascript:;"><i class="fas fa-calculator"></i></a></p>
+
+      <div id="cost-info" class="hidden">
+        <h1>Sneaky hidden box containing a realistic figure for a typical professional website investment:</h1>
+        <p>Costs start at £700.</p>
+      </div>
+
+
+
+      <form class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+        <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+        <p class="contact-form__label">
+          <label>Your Name: <input type="text" name="name" required/></label>   
+        </p>
+        <p class="contact-form__label">
+          <label>Your Email: <input type="email" name="email" required/></label>
+        </p>
+        <p class="contact-form__label">
+          <label>Message: <textarea name="message" rows="10" required></textarea></label>
+        </p>
+        <div data-netlify-recaptcha></div>
+        <p class="contact-form__button">
+          <button type="submit">Send</button>
+        </p>
+      </form>
+
+    </div><!-- text-content contact -->
 
   </div><!-- row -->
 
@@ -87,11 +113,11 @@
 
     <!-- the following comment thing is essential for gulp to uglify and put js into the dist folder: -->
     <!--build:js js/main.min.js -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
-    <script src="assets/js/jquery.fancybox.js"></script>
-    <script src="assets/js/slick.js"></script>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/slick.js"></script>
     
-    <script src="assets/js/inits.js"></script>
+    <script src="js/inits.js"></script>
     <!-- endbuild -->
 
   </body>
