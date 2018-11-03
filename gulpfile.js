@@ -36,9 +36,9 @@ gulp.task('nunjucks', function() {
 });
 
 gulp.task('sass', function() {
-  return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
+  return gulp.src('app/assets/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
     .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
-    .pipe(gulp.dest('app/css')) // Outputs it in the css folder
+    .pipe(gulp.dest('app/assets/css')) // Outputs it in the css folder
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
     }));
@@ -47,9 +47,9 @@ gulp.task('sass', function() {
 // Watchers
 gulp.task('watch', function() {
   gulp.watch('app/**/*.njk', ['nunjucks']);
-  gulp.watch('app/scss/**/*.scss', ['sass']);
+  gulp.watch('app/assets/scss/**/*.scss', ['sass']);
   gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('app/assets/js/**/*.js', browserSync.reload);
 })
 
 // Optimization Tasks 
@@ -60,31 +60,31 @@ gulp.task('useref', function() {
 
   return gulp.src('app/*.html')
     .pipe(useref())
-    .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulpIf('*.js', uglify())) // do I need assets/ path here?
+    .pipe(gulpIf('*.css', cssnano())) // do I need assets/ path here?
+    .pipe(gulp.dest('dist/assets'));
 });
 
 // Optimizing Images 
 gulp.task('images', function() {
-  return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+  return gulp.src('app/assets/images/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
     .pipe(cache(imagemin({
       interlaced: true,
     })))
-    .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('dist/assets/images'))
 });
 
 // Copying fonts 
 gulp.task('fonts', function() {
-  return gulp.src('app/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
+  return gulp.src('app/assets/fonts/**/*')
+    .pipe(gulp.dest('dist/assets/fonts'))
 })
 
 // Copying uploaded documents eg. PDFs
 gulp.task('documents', function() {
-  return gulp.src('app/uploads/documents/**/*')
-    .pipe(gulp.dest('dist/uploads/documents'))
+  return gulp.src('app/assets/documents/**/*')
+    .pipe(gulp.dest('dist/assets/documents'))
 })
 
 // Cleaning 
@@ -95,7 +95,7 @@ gulp.task('clean', function() {
 })
 
 gulp.task('clean:dist', function() {
-  return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
+  return del.sync(['dist/**/*', '!dist/assets/images', '!dist/assets/images/**/*']);
 });
 
 // Build Sequences
