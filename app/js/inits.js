@@ -41,7 +41,7 @@ $(document).ready(function(){
 
     $sliderContainer.slick('slickGoTo', slideIndex);
 
-    //    $galleryImage = $this.parent().prev( '.project__gallery-image' ).slick('slickGoTo', slideIndex);
-//    $('.project__gallery-image').slick('slickGoTo', slideIndex);
+    // $galleryImage = $this.parent().prev( '.project__gallery-image' ).slick('slickGoTo', slideIndex);
+    // $('.project__gallery-image').slick('slickGoTo', slideIndex);
   });
 });

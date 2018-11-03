@@ -11,10 +11,6 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var nunjucksRender = require('gulp-nunjucks-render');
 
-// Basic Gulp task syntax
-gulp.task('hello', function() {
-  console.log('Hello Zell!');
-})
 
 // Development Tasks 
 // -----------------
@@ -85,6 +81,12 @@ gulp.task('fonts', function() {
     .pipe(gulp.dest('dist/fonts'))
 })
 
+// Copying uploaded documents eg. PDFs
+gulp.task('documents', function() {
+  return gulp.src('app/uploads/documents/**/*')
+    .pipe(gulp.dest('dist/uploads/documents'))
+})
+
 // Cleaning 
 gulp.task('clean', function() {
   return del.sync('dist').then(function(cb) {
@@ -100,7 +102,9 @@ gulp.task('clean:dist', function() {
 // ---------------
 
 gulp.task('default', function(callback) {
-  runSequence(['nunjucks', 'sass', 'browserSync'], 'watch',
+  runSequence(
+    ['nunjucks', 'sass', 'browserSync'],
+    'watch',
     callback
   )
 })
@@ -109,7 +113,7 @@ gulp.task('build', function(callback) {
   runSequence(
     'clean:dist',
     'sass',
-    ['useref', 'images', 'fonts'],
+    ['useref', 'images', 'fonts', 'documents'],
     callback
   )
 })
