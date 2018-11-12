@@ -1322,6 +1322,12 @@ body {
     .main-nav a:hover, .main-nav a:focus {
       text-decoration: underline; }
 
+body#home .nav-home a,
+body#portfolio .nav-portfolio a,
+body#bio .nav-bio a,
+body#contact .nav-contact a {
+  text-decoration: underline; }
+
 .menu-button {
   position: fixed;
   top: 20px;
