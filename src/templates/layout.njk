@@ -30,22 +30,18 @@
 
     <div class="page">
 
-      {% block content %}
-      You write this content block in pages files - this current line of text (or whatever else I put in here) would be included in addition to the content block if I called 'super' in it somewhere
-      {% endblock %}
+      {% block content %}{% endblock %}
 
     </div><!-- #page -->
 
     {% include "partials/_footer.njk" %}
 
-    <!-- the following comment thing is essential for gulp to uglify and put js into the dist folder: -->
     <!--build:js js/main.min.js -->
-    <script src="js/jquery-2.1.0.min.js"></script>
-    <script src="js/jquery.fancybox.js"></script>
-    <script src="js/slick.js"></script>
-    
-    <script src="js/inits.js"></script>
+    <script src="js/lib/jquery-2.1.0.min.js"></script>
+    <script src="js/daMenu.js"></script>
     <!-- endbuild -->
+
+    {% block js %}{% endblock %}
 
   </body>
 </html>
