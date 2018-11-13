@@ -9,7 +9,7 @@
 
           {% for image in images %}
           <a href="#">
-            <img src="{{ image }}" alt="">
+            <img src="{{ image.src }}" alt="{{ image.alt }}">
           </a>
           {% endfor %}
 
@@ -19,7 +19,7 @@
 
           {% for thumb in thumbs %}
           <a href="#">
-            <img src="{{ thumb }}" alt="">
+            <img src="{{ thumb.src }}" alt="{{ thumb.alt }}">
           </a>
           {% endfor %}
 
