@@ -1,5 +1,10 @@
 {% set body_id = "portfolio" %}
 
+{% block meta %}
+    <title>Some examples of website's I have designed and built</title>
+    <meta name="description" content="Discover my work, along with insights into my development process">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% from "macros/_portfolio-macro.njk" import portfolio %}
