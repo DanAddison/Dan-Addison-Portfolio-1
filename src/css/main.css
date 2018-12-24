@@ -1261,19 +1261,19 @@ body {
   text-align: center;
   margin: 2em;
   max-width: 700px;
-  padding: 2em 2em;
-  font-size: .8em; }
+  padding: 2em 2em; }
   #cost-info h1 {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: bold; }
+  #cost-info p {
+    font-size: .7em; }
   #cost-info .as-standard {
     font-style: italic; }
   @media screen and (min-width: 700px) {
     #cost-info {
-      padding: 2em 4em;
-      font-size: 1em; }
+      padding: 2em 4em; }
       #cost-info h1 {
-        font-size: 1.5em; } }
+        font-size: 1.75em; } }
 
 .site-branding {
   text-align: center; }

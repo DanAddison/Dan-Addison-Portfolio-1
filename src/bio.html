@@ -21,7 +21,6 @@
     <!--endbuild-->
 
     
-    
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 
     
@@ -29,6 +28,9 @@
 
     
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- cookie consent provided by https://github.com/insites/cookieconsent: -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
 
   </head>
 
@@ -148,6 +150,27 @@
     <!--build:js js/main.min.js -->
     <script src="js/lib/jquery-2.1.0.min.js"></script>
     <script src="js/daMenu.js"></script>
+    <!-- cookie consent provided by https://github.com/insites/cookieconsent: -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#941221"
+        },
+        "button": {
+          "background": "#ff0000"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to improve your user experience",
+        "dismiss": "Whatever",
+        "link": "Learn more about cookies"
+      }
+    })});
+    </script>
     <!-- endbuild -->
 
     
