@@ -18,6 +18,10 @@
     background-color: $color__transparent;
   }
 
+  a:hover {
+    text-decoration: none;
+  }
+
   i {
     transition: .1s ease-in;
 

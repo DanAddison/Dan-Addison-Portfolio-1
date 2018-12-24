@@ -1,4 +1,8 @@
 .social-icons {
+  
+  a:hover {
+    text-decoration: none;
+  }
 
   i {
     font-size: .8em;
@@ -7,6 +11,7 @@
     &:hover,
     &:focus {
       transform: scale(1.2);
+      // text-decoration: none;
     }
   }
 }

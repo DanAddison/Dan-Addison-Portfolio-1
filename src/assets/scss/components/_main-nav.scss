@@ -25,7 +25,7 @@
   &.is-active-menu {
     margin: 0;
 
-    .fa-bars {
+    .icon-menu {
       color: $white !important;
       transition: .6s ease-in;
     }
@@ -68,7 +68,7 @@ body#contact .nav-contact a {
   right: 20px;
 }
 
-.fa-bars {
+.icon-menu {
   font-size: 1.5em;
   color: $color__body;
   transition: .6s ease-in;
