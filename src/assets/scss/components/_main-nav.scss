@@ -53,6 +53,7 @@
     }
   }
 
+  // more width on largest screens
   @include mq($bp-xl) {
     width: 280px;
     margin-right: -285px;
