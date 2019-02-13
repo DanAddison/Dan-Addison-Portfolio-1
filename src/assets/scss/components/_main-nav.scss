@@ -4,14 +4,14 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 10;
-  width: 220px;
-  padding: 100px 1em 25px;
+  width: 225px;
+  padding: 100px 1.5em 25px;
   position: fixed;
   top: 0px;
   right: 0;
   height:100%;
   background-color: $primary;
-  margin-right: -220px;
+  margin-right: -230px;
   transition: .3s ease-in;
 
   .site-title {
@@ -51,6 +51,11 @@
     &:focus {
       text-decoration: underline;
     }
+  }
+
+  @include mq($bp-xl) {
+    width: 280px;
+    margin-right: -285px;
   }
 }
 
