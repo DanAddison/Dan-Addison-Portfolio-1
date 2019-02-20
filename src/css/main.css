@@ -1037,6 +1037,16 @@ img {
   .video-caption p {
     margin-top: 5px; }
 
+/*********************************************************
+## no ugly blue focus ring for non-keyboard users - refers to userTabbing.js file
+*********************************************************/
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus,
+body:not(.user-is-tabbing) a:focus {
+  outline: none; }
+
 body {
   background-color: #eff8fa; }
 

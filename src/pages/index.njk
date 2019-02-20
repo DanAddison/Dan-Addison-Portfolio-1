@@ -6,6 +6,18 @@
     <meta name="description" content="This portfolio site is the best place to find out more about my Folkestone based web development services">
 {% endblock %}
 
+{% block og_meta %}
+    <meta property="og:title" content="Dan Addison - Freelance web developer based in Folkestone">
+    <meta property="og:description" content="I'm Dan, a friendly freelance web developer, let's build you a website you can be proud of!">
+    <meta property="og:image" content="https://danaddisoncreative.com/assets/images/PortfolioHome.jpg">
+{% endblock %}
+
+{% block twitter_meta %}
+    <meta property="twitter:title" content="Dan Addison - Freelance web developer based in Folkestone">
+    <meta property="twitter:description" content="I'm Dan, a friendly freelance web developer, let's build you a website you can be proud of!">
+    <meta property="twitter:image" content="https://danaddisoncreative.com/assets/images/PortfolioHome.jpg">
+{% endblock %}
+
 {% extends "layout.njk" %}
 
 {% block content %}
