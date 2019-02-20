@@ -20,9 +20,10 @@ gulp.task('browserSync', function() {
   browserSync({
     server: {
       baseDir: 'src',
+      index: "home.html",
       serveStaticOptions: {
         extensions: ['html']
-    }
+      }
     }
   })
 })
