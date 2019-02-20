@@ -19,7 +19,10 @@ var nunjucksRender = require('gulp-nunjucks-render');
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: 'src'
+      baseDir: 'src',
+      serveStaticOptions: {
+        extensions: ['html']
+    }
     }
   })
 })
@@ -87,6 +90,12 @@ gulp.task('documents', function() {
     .pipe(gulp.dest('dist/assets/documents'))
 })
 
+// Copying htaccess file for pretty urls
+gulp.task('htaccess', function() {
+  return gulp.src('src/.htaccess')
+    .pipe(gulp.dest('dist'))
+})
+
 // Cleaning 
 gulp.task('clean', function() {
   return del.sync('dist').then(function(cb) {
@@ -113,7 +122,7 @@ gulp.task('build', function(callback) {
   runSequence(
     'clean:dist',
     'sass',
-    ['useref', 'images', 'fonts', 'documents'],
+    ['useref', 'images', 'fonts', 'documents', 'htaccess'],
     callback
   )
 })
