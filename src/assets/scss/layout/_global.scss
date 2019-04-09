@@ -10,27 +10,6 @@ body {
   display: none;
 }
 
-.background-image {
-  z-index: -1;
-  position: absolute;
-  top: 60px;
-  left: 5vw;
-  
-  img {
-    max-height: calc(100vh - 100px);
-    max-width: 90vw;
-  }
-
-  @include mq($bp-m) {
-    position: fixed;
-  }
-
-  @include mq($bp-xxl) {
-    top: 20vh;
-    left: 15vw;
-  }
-}
-
 .text-content {
   position: absolute;
   right: 0px;
@@ -55,15 +34,11 @@ body {
 
   @include mq($bp-m) {
     top: 150px;
-    right: 100px;
+    right: 120px;
     margin-bottom: 0;
   }
-  
-  @include mq($bp-l) {
-    right: 250px;
-  }
 
-  @include mq($bp-xxl) {
+  @include mq($bp-xl) {
     top: 30vh;
   }
 }

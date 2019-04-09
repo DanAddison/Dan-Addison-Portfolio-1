@@ -78,7 +78,7 @@
       "theme": "classic",
       "content": {
         "message": "This website uses cookies to improve your experience",
-        "dismiss": "Cool",
+        "dismiss": "That's cool",
         "link": "Learn more about cookies"
       }
     })});
@@ -121,9 +121,13 @@
 
   <div class="row row--pad">
 
-    <div class="background-image">
-      <img src="assets/images/sintra5.png" alt="Dan on a boulder ascending Sintra, Portugal, 2017">
-    </div>
+    <div id="lazy-background-image" data-image-src="assets/images/sintra5.png">
+
+      
+      <span id="placeholder-overlay" style="background-image: url('assets/images/sintra5tiny.png');"></span>
+
+    </div><!-- #lazy-feature-image -->
+
 
     <div class="text-content intro">
 
@@ -150,6 +154,7 @@
     <script src="js/lib/jquery-2.1.0.min.js"></script>
     <script src="js/daMenu.js"></script>
     <script src="js/userTabbing.js"></script>
+    <script src="js/blurLazyImage.js"></script>
     <!-- endbuild -->
 
     

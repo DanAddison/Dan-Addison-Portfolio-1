@@ -1056,22 +1056,6 @@ body {
 .hidden {
   display: none; }
 
-.background-image {
-  z-index: -1;
-  position: absolute;
-  top: 60px;
-  left: 5vw; }
-  .background-image img {
-    max-height: calc(100vh - 100px);
-    max-width: 90vw; }
-  @media screen and (min-width: 700px) {
-    .background-image {
-      position: fixed; } }
-  @media screen and (min-width: 1500px) {
-    .background-image {
-      top: 20vh;
-      left: 15vw; } }
-
 .text-content {
   position: absolute;
   right: 0px;
@@ -1092,12 +1076,9 @@ body {
   @media screen and (min-width: 700px) {
     .text-content {
       top: 150px;
-      right: 100px;
+      right: 120px;
       margin-bottom: 0; } }
-  @media screen and (min-width: 1000px) {
-    .text-content {
-      right: 250px; } }
-  @media screen and (min-width: 1500px) {
+  @media screen and (min-width: 1300px) {
     .text-content {
       top: 30vh; } }
 
@@ -1418,6 +1399,37 @@ body#contact .nav-contact a {
   transition: all .2s ease; }
   .social-icons i:hover, .social-icons i:focus {
     transform: scale(1.2); }
+
+#lazy-background-image,
+#placeholder-overlay {
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat; }
+
+#lazy-background-image {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  max-width: 800px;
+  max-height: 800px; }
+  @media screen and (min-width: 700px) {
+    #lazy-background-image {
+      position: fixed; } }
+
+#placeholder-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* Blur out pixelated image */
+  filter: blur(10px);
+  opacity: 1;
+  transition: opacity 1s linear; }
+
+#placeholder-overlay.fade-out {
+  /* Fade out with a class */
+  opacity: 0; }
 
 @font-face {
   font-family: 'icomoon';

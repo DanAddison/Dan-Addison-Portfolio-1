@@ -1,0 +1,35 @@
+
+#lazy-background-image,
+#placeholder-overlay {
+	background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+#lazy-background-image {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  max-width: 800px;
+  max-height: 800px;
+
+  @include mq($bp-m) {
+    position: fixed;
+  }
+}
+
+#placeholder-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+  right: 0;
+	/* Blur out pixelated image */
+	filter:blur(10px);
+	opacity: 1;
+	transition: opacity 1s linear;
+}
+#placeholder-overlay.fade-out {
+	/* Fade out with a class */
+	opacity: 0;
+}

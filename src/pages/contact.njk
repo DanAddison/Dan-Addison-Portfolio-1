@@ -25,9 +25,12 @@
 
   <div class="row row--pad">
 
-    <div class="background-image">
-      <img src="assets/images/snowdon5.png" alt="Dan ascending Mt Snowdon, 2018">
-    </div>
+    <div id="lazy-background-image" data-image-src="assets/images/snowdon5.png">
+
+      {# Insert the low quality placeholder #}
+      <span id="placeholder-overlay" style="background-image: url('assets/images/snowdon5tiny.png');"></span>
+
+    </div><!-- #lazy-feature-image -->
 
     <div class="text-content contact">
 
