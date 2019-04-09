@@ -1051,7 +1051,7 @@ body {
   background-color: #eff8fa; }
 
 .page {
-  min-height: calc(100vh - 64px); }
+  min-height: calc(100vh - 120px); }
 
 .hidden {
   display: none; }
@@ -1409,7 +1409,7 @@ body#contact .nav-contact a {
 #lazy-background-image {
   position: relative;
   width: 90vw;
-  height: 90vh;
+  height: 70vh;
   max-width: 800px;
   max-height: 800px; }
   @media screen and (min-width: 700px) {
