@@ -63,6 +63,26 @@
 
     <!-- cookie consent provided by https://github.com/insites/cookieconsent: -->
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#941221"
+        },
+        "button": {
+          "background": "#ff0000"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to improve your experience",
+        "dismiss": "Cool",
+        "link": "Learn more about cookies"
+      }
+    })});
+    </script>
 
   </head>
 
@@ -156,27 +176,6 @@
     <script src="js/lib/jquery-2.1.0.min.js"></script>
     <script src="js/daMenu.js"></script>
     <script src="js/userTabbing.js"></script>
-    <!-- cookie consent provided by https://github.com/insites/cookieconsent: -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-    <script>
-    window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-      "palette": {
-        "popup": {
-          "background": "#941221"
-        },
-        "button": {
-          "background": "#ff0000"
-        }
-      },
-      "theme": "classic",
-      "content": {
-        "message": "This website uses cookies to improve your user experience",
-        "dismiss": "Whatever",
-        "link": "Learn more about cookies"
-      }
-    })});
-    </script>
     <!-- endbuild -->
 
     
