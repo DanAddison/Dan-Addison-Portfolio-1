@@ -1199,28 +1199,16 @@ body {
   .project__info-tech span {
     color: #222; }
 
-.biography h1 {
-  padding: 0 .5em; }
-
-.biography ul {
-  list-style: none;
-  max-width: 700px;
-  margin-left: auto;
-  padding-right: 1em; }
-
-.biography li {
-  display: table;
-  margin: 0 0 1em auto;
-  padding: 0 .5em;
-  background-color: rgba(255, 255, 255, 0.7); }
-
-.biography a:hover {
-  text-decoration: none; }
-
-.biography i {
-  transition: .1s ease-in; }
-  .biography i:hover, .biography i:focus {
-    transform: scale(1.3); }
+.about {
+  max-width: 600px; }
+  .about h1 {
+    padding: 0 .5em; }
+  .about a:hover {
+    text-decoration: none; }
+  .about i {
+    transition: .1s ease-in; }
+    .about i:hover, .about i:focus {
+      transform: scale(1.3); }
 
 #contact .background-image {
   position: absolute; }
@@ -1322,7 +1310,7 @@ body {
 
 body#home .nav-home a,
 body#portfolio .nav-portfolio a,
-body#bio .nav-bio a,
+body#about .nav-about a,
 body#contact .nav-contact a {
   text-decoration: underline; }
 

@@ -1,129 +1,33 @@
-<!DOCTYPE html>
+{% set body_id = "about" %}
 
-<html lang="en">
-  <head>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134139024-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-134139024-1');
-    </script>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="theme-color" content="#237d8d">
-    
-    
+{% block meta %}
     <title>Dan Addison's life and times: a whistle-stop biography</title>
     <meta name="description" content="A biographical background giving context to my freelance web development career">
+{% endblock %}
 
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    
-    
+{% block og_meta %}
     <meta property="og:url" content="https://danaddisoncreative.com/bio">
     <meta property="og:title" content="Dan Addison's life and times: a whistle-stop biography">
     <meta property="og:description" content="A biographical background giving context to my freelance web development career">
     <meta property="og:image" content="https://danaddisoncreative.com/assets/images/PortfolioBio.jpg">
+{% endblock %}
 
-    <meta property="og:image:height" content="800">
-    <meta property="og:image:width" content="800">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    
-    
+{% block twitter_meta %}
     <meta property="twitter:url" content="https://danaddisoncreative.com/bio">
     <meta property="twitter:title" content="Dan Addison's life and times: a whistle-stop biography">
     <meta property="twitter:description" content="A biographical background giving context to my freelance web development career">
     <meta property="twitter:image" content="https://danaddisoncreative.com/assets/images/PortfolioBio.jpg">
+{% endblock %}
 
-    
+{% extends "layout.njk" %}
 
-    <!-- essential comment for gulp to minify and put css into dist folder: -->
-    <!--build:css css/styles.min.100.css-->
-    <link rel="stylesheet" href="css/main.css">
-    <!--endbuild-->
-
-    
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon_package/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon_package/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon_package/favicon-16x16.png">
-    <link rel="manifest" href="/assets/images/favicon_package/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- cookie consent provided by https://github.com/insites/cookieconsent: -->
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-    <script>
-    window.addEventListener("load", function(){
-    window.cookieconsent.initialise({
-      "palette": {
-        "popup": {
-          "background": "#941221"
-        },
-        "button": {
-          "background": "#ff0000"
-        }
-      },
-      "theme": "classic",
-      "content": {
-        "message": "This website uses cookies to improve your experience",
-        "dismiss": "That's cool",
-        "link": "Learn more about cookies"
-      }
-    })});
-    </script>
-
-  </head>
-
-  <body id="about">
-
-    <header class="site-header"> 
-
-
-    <nav class="main-nav">
-      <div class="menu-button">
-        <i class="icon-menu"></i>
-      </div>
-
-      <h1 class="site-title"><a href="/home">Dan Addison</a></h1>
-
-      <ul>
-        <li class="nav-home"><a href="/home">home</a></li>
-        <li class="nav-portfolio"><a href="/portfolio">portfolio</a></li>
-        <li class="nav-bio"><a href="/bio">bio</a></li>
-        <li class="nav-contact"><a href="/contact">contact</a></li>
-      </ul>
-
-      <div class="social-icons">
-        <a href="https://github.com/DanAddison" target="_blank"><i class="icon-github"></i></a>
-        <a href="https://www.linkedin.com/in/danaddison/" target="_blank"><i class="icon-linkedin"></i></a>
-        <a href="https://www.youtube.com/c/DanAddison" target="_blank"><i class="icon-youtube"></i></a>
-        <a href="https://www.instagram.com/dandevelops" target="_blank"><i class="icon-instagram"></i></a>
-      </div>
-    </nav>
-
-</header>
-
-    <div class="page">
-
-      
+{% block content %}
 
   <div class="row row--pad">
 
     <div id="lazy-background-image" data-image-src="assets/images/ionian5.png">
 
-      
+      {# Insert the low quality placeholder #}
       <span id="placeholder-overlay" style="background-image: url('assets/images/ionian5tiny.png');"></span>
 
     </div><!-- #lazy-feature-image -->
@@ -164,29 +68,11 @@
 
   </div><!-- row -->
 
+{% endblock %}
 
-
-    </div><!-- #page -->
-
-    <footer class="site-footer">
-
-
-</footer>
-
-    <!--build:js js/main.min.js -->
-    <script src="js/lib/jquery-2.1.0.min.js"></script>
-    <script src="js/daMenu.js"></script>
-    <script src="js/userTabbing.js"></script>
-    <script src="js/blurLazyImage.js"></script>
-    <!-- endbuild -->
-
-    
-    
+{% block js %}
 <!--build:js js/da.fancybox.min.js -->
 <script src="js/lib/jquery.fancybox.js"></script>
 <script src="js/daFancybox.js"></script>
 <!-- endbuild -->
-
-
-  </body>
-</html>
+{% endblock %}
