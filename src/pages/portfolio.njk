@@ -95,6 +95,32 @@
   ) }}
 
   {{ portfolio (
+    title= 'Online Resume',
+    link= 'https://ruby-resume.netlify.com',
+    link_text= 'Live site',
+    paragraphs= [
+    'A slick single-page CV.',
+    'The idea of this project was to present a professional CV as a single page app. I decided to use a side navigation which takes the user to each section of the CV using a smooth scrolling transition.',
+    'The site allows a prospective employer or client to instantly zone in on concise, isolated chunks of information, within a coherent whole.',
+    'I have built the site in Vue.js, using a static site generator called Gridsome. This gives huge benefits - the site is very fast, accessible, SEO friendly and secure.'
+    ],
+    tech='Vue.js, Gridsome, Sass, Git',
+    repo='https://github.com/DanAddison/Ruby-resume',
+    images= [
+      { src: 'assets/images/portfolio/fullsize/resume-site-1.jpg',
+        alt: 'website screenshot of painting page' },
+      { src: 'assets/images/portfolio/fullsize/resume-site-2.jpg',
+        alt: 'website screenshot of landing page' }
+    ],
+    thumbs= [
+      { src: 'assets/images/portfolio/thumbs/resume-site-1_thumb.jpeg',
+        alt: 'website screenshot of painting page' },
+      { src: 'assets/images/portfolio/thumbs/resume-site-2_thumb.jpeg',
+        alt: 'website screenshot of a resume section' }
+    ]
+  ) }}
+
+  {{ portfolio (
     title= 'Pen & Plant',
     link= '',
     link_text= 'Live site launching soon!',
