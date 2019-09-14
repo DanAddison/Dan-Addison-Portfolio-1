@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://personal-portfolio-v1.netlify.com/">
-    <img alt="logo of whiskey tumbler with ice cubes" src="src/assets/images/PortfolioHome.jpg" width="400" />
+    <img alt="screenshot of web developer portfolio website" src="src/assets/images/PortfolioHome.jpg" width="400" />
   </a>
 </p>
 <h1 align="center">
