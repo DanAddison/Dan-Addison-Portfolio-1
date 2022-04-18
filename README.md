@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Dan Addison Portfolio v1
+  Personal Portfolio v1 (deprecated)
 </h1>
 
 [Visit live site](https://personal-portfolio-v1.netlify.com/)
